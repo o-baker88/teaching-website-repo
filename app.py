@@ -1,12 +1,6 @@
-from flask import Flask
+from teaching import create_app  # Import your app factory
 
-app = Flask(__name__)
-
-
-@app.route('/')
-def hello_world():  # put application's code here
-    return 'Hello World!'
-
+app = create_app()  # Use the correct app
 
 if __name__ == '__main__':
     app.run()
