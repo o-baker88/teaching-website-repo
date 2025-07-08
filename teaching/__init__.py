@@ -8,4 +8,7 @@ def create_app():
     from .home import home_bp
     app.register_blueprint(home_bp)
 
+    from .about import about_bp
+    app.register_blueprint(about_bp)
+
     return app

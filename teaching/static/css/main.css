@@ -1769,7 +1769,8 @@ button,
       margin-bottom: 0; }
     .posts article .image {
       display: block;
-      margin: 0 0 2em 0; }
+      margin: 0 0 2em 0;
+      padding: 3em; }
       .posts article .image img {
         display: block;
         width: 100%; }
@@ -2139,7 +2140,7 @@ button,
     margin: 0 0 2em 4em;
     width: 50%; }
     #banner .image img {
-      height: 100%;
+      height: 70%;
       -moz-object-fit: cover;
       -webkit-object-fit: cover;
       -ms-object-fit: cover;
@@ -2148,7 +2149,7 @@ button,
       -webkit-object-position: center;
       -ms-object-position: center;
       object-position: center;
-      width: 100%; }
+    }
   @media screen and (orientation: portrait) {
     #banner {
       -moz-flex-direction: column-reverse;
@@ -2271,3 +2272,108 @@ button,
     border-top: 0;
     margin-top: 0;
     padding-top: 0; }
+
+
+
+
+/* WAVE CSS FOR BANNER - JUST ADDED, CURRENTLY BROKEN */
+
+    .wave {
+      animation: move-forever 4s linear infinite;
+      transform-box: fill-box;
+      transform-origin: 0 50%;
+    }
+
+    .wave2 {
+      animation-duration: 6s;
+      animation-delay: -2s;
+      transform: translateY(0.05px);
+    }
+
+    .wave3 {
+      animation-duration: 8s;
+      animation-delay: -4s;
+      transform: translateY(0.1px);
+    }
+
+    @keyframes move-forever {
+      0% {
+        transform: translateX(-2px);
+      }
+      100% {
+        transform: translateX(0px);
+      }
+    }
+
+
+
+
+/* Full-width quote section with centered content */
+.quote-section {
+  width: 100vw;
+  background-color: #fffaf5;
+  border-top: 2px solid #f4a261;
+  border-bottom: 2px solid #f4a261;
+  padding: 4em 2em;
+  margin: 4em 0;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  overflow: hidden; /* clip any visual overflow */
+}
+
+/* Inner container to align with site content */
+.quote-inner {
+  max-width: 1100px; /* Match your site’s content width */
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Quote styling */
+.quote-section blockquote {
+  margin: 0 auto;
+  font-style: italic;
+  font-size: 1.75em;
+  line-height: 1.6;
+  color: #333;
+  padding: 0 1em;
+}
+
+.quote-section blockquote footer {
+  font-size: 1em;
+  color: #f4a261;
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+/* Fade-in animation */
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.quote-box {
+  opacity: 0; /* Start hidden */
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.quote-box.visible {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+body {
+  overflow-x: hidden;
+}

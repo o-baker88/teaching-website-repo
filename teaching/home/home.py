@@ -5,4 +5,4 @@ home_bp = Blueprint('home', __name__)
 
 @home_bp.route('/', methods=['GET'])
 def home():
-    return render_template('index.html', title='Testing Homepage')
+    return render_template('index.html', title='Welcome to Tutorly!')

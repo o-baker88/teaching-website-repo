@@ -6,8 +6,9 @@
 -->
 <html>
 	<head>
-		<title>Editorial by HTML5 UP</title>
+		<title>{{ title }}</title>
 		<meta charset="utf-8" />
+        <script src="https://kit.fontawesome.com/ee9034605b.js" crossorigin="anonymous"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 	</head>
@@ -22,125 +23,141 @@
 
 							<!-- Header -->
 								<header id="header">
-									<a href="index.html" class="logo"><strong>Editorial</strong> by HTML5 UP</a>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
-									</ul>
+									<a href="{{ url_for('home.home') }}" class="logo">Tutorly</a>
 								</header>
+        <!-- Wavy banner - currently broken -->
 
-							<!-- Banner -->
+         <!--
+<svg viewBox="0 0 2 1" preserveAspectRatio="none">
+  <defs>
+    <path id="w" d="
+      M0 1v-.5
+      q.5.5 1 0
+      t1 0 1 0 1 0
+      v.5z" />
+  </defs>
+
+  <g class="wave">
+    <use href="#w" fill="#2d55aa" />
+  </g>
+  <g class="wave wave2">
+    <use href="#w" fill="#3461c1" />
+  </g>
+  <g class="wave wave3">
+    <use href="#w" fill="#4579e2" />
+  </g>
+</svg>
+-->
+                                <!-- Banner -->
 								<section id="banner">
 									<div class="content">
 										<header>
-											<h1>Hi, I’m Editorial<br />
-											by HTML5 UP</h1>
-											<p>A free and fully responsive site template</p>
+											<h1>Learning to suit<br />
+											 your child's needs</h1>
+											<p>Learn about how your child can benefit</p>
 										</header>
-										<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.</p>
+										<p>Whether it's getting ahead early, improving your child's literacy and numeracy skills, or preparing for NCEA and cambridge exams, we have qualified tutors ready to help you.</p>
 										<ul class="actions">
-											<li><a href="#" class="button big">Learn More</a></li>
+											<li><a href="#" class="button big">Book Assessment</a></li>
 										</ul>
 									</div>
-									<span class="image object">
-										<img src="images/pic10.jpg" alt="" />
+									<span class="image object home-image">
+										<img src="static/images/graduation.png" alt="graduation" />
 									</span>
 								</section>
 
 							<!-- Section -->
 								<section>
 									<header class="major">
-										<h2>Erat lacinia</h2>
+										<h2>What we offer</h2>
 									</header>
 									<div class="features">
 										<article>
-											<span class="icon fa-gem"></span>
+											<span class="icon solid fa-clipboard-list"></span>
 											<div class="content">
-												<h3>Portitor ullamcorper</h3>
-												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+												<h3>Free assessment</h3>
+												<p>Our free assessments help us identify your child's strengths and areas to improve, so we know how best to help</p>
 											</div>
 										</article>
 										<article>
-											<span class="icon solid fa-paper-plane"></span>
+											<span class="icon solid fa-wifi"></span>
 											<div class="content">
-												<h3>Sapien veroeros</h3>
-												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+												<h3>Online and In-person</h3>
+												<p>We offer in-person lessons, and online lessons to best suit your needs</p>
 											</div>
 										</article>
 										<article>
-											<span class="icon solid fa-rocket"></span>
+											<span class="icon solid fa-tag"></span>
 											<div class="content">
-												<h3>Quam lorem ipsum</h3>
-												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+												<h3>Sibling Discounts</h3>
+												<p>Discounts are provided to families with multiple siblings who wish to have simultaneous lessons</p>
 											</div>
 										</article>
 										<article>
-											<span class="icon solid fa-signal"></span>
+											<span class="icon solid fa-chalkboard-teacher"></span>
 											<div class="content">
-												<h3>Sed magna finibus</h3>
-												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+												<h3>Qualified Tutors</h3>
+												<p>Our tutors are Qualified and highly experienced in their field, ready to help you with your child's needs</p>
 											</div>
 										</article>
 									</div>
 								</section>
 
+
+                            <!-- GENERATE SOMETHING HERE -->
+
+                            <!-- Quote Section -->
+<!-- Quote Section -->
+<section class="quote-section">
+  <div class="quote-inner quote-box">
+    <blockquote>
+      <p>"Education is the most powerful weapon which you can use to change the world."</p>
+      <footer>— Nelson Mandela</footer>
+    </blockquote>
+  </div>
+</section>
+
+
+
 							<!-- Section -->
 								<section>
 									<header class="major">
-										<h2>Ipsum sed dolor</h2>
+										<h2>What we offer</h2>
 									</header>
 									<div class="posts">
 										<article>
-											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-											<h3>Interdum aenean</h3>
+											<a href="#" class="image"><img src="static/images/Exams-bro.svg" alt="exams" /></a>
+											<h3>NCEA and Cambridge support</h3>
 											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 											<ul class="actions">
 												<li><a href="#" class="button">More</a></li>
 											</ul>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
-											<h3>Nulla amet dolore</h3>
+											<a href="#" class="image"><img src="static/images/Kids-reading.svg" alt="english" /></a>
+											<h3>English as a second language</h3>
 											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 											<ul class="actions">
 												<li><a href="#" class="button">More</a></li>
 											</ul>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-											<h3>Tempus ullamcorper</h3>
+											<a href="#" class="image"><img src="static/images/brain-sides.svg" alt="icas" /></a>
+											<h3>ICAS preperation</h3>
 											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 											<ul class="actions">
 												<li><a href="#" class="button">More</a></li>
 											</ul>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
-											<h3>Sed etiam facilis</h3>
+											<a href="#" class="image"><img src="static/images/Learning-cuate.svg" alt="primary" /></a>
+											<h3>Primary School Reading & Writing</h3>
 											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 											<ul class="actions">
 												<li><a href="#" class="button">More</a></li>
 											</ul>
 										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
-											<h3>Feugiat lorem aenean</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
-											<h3>Amet varius aliquam</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
+
 									</div>
 								</section>
 
@@ -150,13 +167,6 @@
 				<!-- Sidebar -->
 					<div id="sidebar">
 						<div class="inner">
-
-							<!-- Search -->
-								<section id="search" class="alt">
-									<form method="post" action="#">
-										<input type="text" name="query" id="query" placeholder="Search" />
-									</form>
-								</section>
 
                             <!-- Navbar -->
                             {% include 'navbar.html' %}
@@ -201,7 +211,7 @@
 
 							<!-- Footer -->
 								<footer id="footer">
-									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+									<p class="copyright">&copy; Untitled. All rights reserved. <a href="https://storyset.com/education">Education illustrations by Storyset</a></p>
 								</footer>
 
 						</div>
@@ -209,6 +219,13 @@
 
 			</div>
 
+    		<!-- Scripts -->
+
+            <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+            <script src="{{ url_for('static', filename='js/browser.min.js') }}"></script>
+            <script src="{{ url_for('static', filename='js/breakpoints.min.js') }}"></script>
+            <script src="{{ url_for('static', filename='js/util.js') }}"></script>
+            <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 
 	</body>
 </html>
